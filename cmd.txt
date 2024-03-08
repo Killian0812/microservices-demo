@@ -1,0 +1,15 @@
+docker build --tag=microservice-kubernetes-demo-apache apache
+docker tag microservice-kubernetes-demo-apache killian0812/microservice-kubernetes-demo-apache:latest
+docker push killian0812/microservice-kubernetes-demo-apache
+
+docker build --tag=microservice-kubernetes-demo-catalog microservice-kubernetes-demo-catalog
+docker tag microservice-kubernetes-demo-catalog killian0812/microservice-kubernetes-demo-catalog:latest
+docker push killian0812/microservice-kubernetes-demo-catalog
+
+docker build --tag=microservice-kubernetes-demo-customer microservice-kubernetes-demo-customer
+docker tag microservice-kubernetes-demo-customer killian0812/microservice-kubernetes-demo-customer:latest
+docker push killian0812/microservice-kubernetes-demo-customer
+
+docker build --tag=microservice-kubernetes-demo-order microservice-kubernetes-demo-order
+docker tag microservice-kubernetes-demo-order killian0812/microservice-kubernetes-demo-order:latest
+docker push killian0812/microservice-kubernetes-demo-order
